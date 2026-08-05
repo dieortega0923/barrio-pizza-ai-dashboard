@@ -229,18 +229,35 @@ Abrir el proyecto y ejecutar un servidor local (por ejemplo, Live Server en Visu
 
 ---
 
-# 📸 Capturas
+# 📸 Capturas de pantalla
 
-Agregar aquí capturas de:
+## 🖥️ Dashboard principal
 
-* Dashboard principal.
-* Tendencias de consumo.
-* Alertas detectadas.
-* Explicación inteligente.
-* Asistente.
-* Editor de órdenes.
+![Dashboard principal](images/dashboard.png)
 
 ---
+
+## ⚠️ Panel de alertas
+
+![Panel de alertas](images/alerts.png)
+
+---
+
+## 🤖 Asistente Inteligente
+
+![Asistente Inteligente](images/assistant.png)
+
+---
+
+## 💡 Explicación de una alerta
+
+![Explicación de una alerta](images/alert_exp.png)
+
+---
+
+## ✏️ Editor de órdenes
+
+![Editor de órdenes](images/editor.png)
 
 # 🔮 Posibles mejoras
 

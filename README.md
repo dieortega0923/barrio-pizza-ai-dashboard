@@ -10,8 +10,6 @@ Una aplicación web que analiza automáticamente las órdenes de compra de las s
 
 **Aplicación:** (https://reto-practicante.netlify.app/)
 
-**Repositorio:** <LINK_GITHUB>
-
 **Video de demostración:** <LINK_VIDEO>
 
 ---

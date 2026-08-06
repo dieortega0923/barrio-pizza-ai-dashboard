@@ -10,9 +10,8 @@ Una aplicación web que analiza automáticamente las órdenes de compra de las s
 
 **Aplicación:** [reto-practicante.netlify.app](https://reto-practicante.netlify.app/)
 
-**Video de demostración:** <LINK_VIDEO>
+**Video de demostración:** <[LINK_VIDEO](https://youtu.be/QFMVxQuVGJA)>
 
-> ⚠️ Recordatorio: reemplazar `<LINK_VIDEO>` antes de entregar.
 
 ---
 

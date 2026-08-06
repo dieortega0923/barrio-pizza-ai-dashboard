@@ -21,9 +21,9 @@
  */
 
 const AssistantConfig = {
-  GEMINI_API_KEY: 'AQ.Ab8RN6JTHqzeRhYY4VX6TdynPEivVi8PyE1iEcIki8Qwyuj1Dg', // <-- tu API key acá. Vacío = la IA queda desactivada.
+  GEMINI_API_KEY: '', // <-- tu API key acá. Vacío = la IA queda desactivada.
   // flash-lite: mismo tipo de modelo, más rápido y con más cuota gratis
   // por minuto/día que flash. Alcanza de sobra para redactar explicaciones
   // cortas a partir de datos que el motor ya calculó.
-  GEMINI_MODEL: 'gemini-2.5-flash-lite',
+  GEMINI_MODEL: 'gemini-3.5-flash-lite',
 };

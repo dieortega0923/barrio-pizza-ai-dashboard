@@ -8,9 +8,11 @@ Una aplicación web que analiza automáticamente las órdenes de compra de las s
 
 ## 🌐 Demo
 
-**Aplicación:** (https://reto-practicante.netlify.app/)
+**Aplicación:** [reto-practicante.netlify.app](https://reto-practicante.netlify.app/)
 
 **Video de demostración:** <LINK_VIDEO>
+
+> ⚠️ Recordatorio: reemplazar `<LINK_VIDEO>` antes de entregar.
 
 ---
 
@@ -66,12 +68,13 @@ Todo el análisis se presenta mediante un dashboard pensado para que un usuario 
 
 ### Funcionalidades adicionales
 
-* ✅ Tendencias de consumo.
+* ✅ Tendencias de consumo (regresión lineal con detección de semanas atípicas).
+* ✅ Detección de órdenes atípicas entre sucursales.
 * ✅ Editor de órdenes desde la interfaz.
 * ✅ Exportación de resultados a Excel.
 * ✅ Explicación detallada de cada alerta.
 * ✅ Visualización del cálculo realizado por el sistema.
-* ✅ Asistente Inteligente.
+* ✅ Asistente Inteligente (resumen ejecutivo, recomendaciones, insights automáticos, chat).
 * ✅ Arquitectura híbrida IA + respaldo local.
 
 ---
@@ -154,8 +157,7 @@ Durante el desarrollo se tomaron las siguientes decisiones:
 
 ```text
 css/
-├──styles.css
-data/
+├── styles.css
 
 js/
 ├── dashboard.js
@@ -166,7 +168,8 @@ js/
 │
 └── assistant/
     ├── assistant-service.js
-    ├── assistant-config.js
+    ├── assistant-config.example.js   ← plantilla (se sube al repo)
+    ├── assistant-config.js           ← key real (NO se sube, ver .gitignore)
     ├── templates.js
     ├── insights.js
     └── providers/
@@ -204,7 +207,6 @@ Esto permitiría que la Gerente de Compras revise únicamente las órdenes con a
 * HTML5
 * CSS3
 * JavaScript (ES6)
-* Chart.js
 * SheetJS (XLSX)
 * Gemini API
 * Netlify
@@ -223,9 +225,12 @@ Clonar el repositorio:
 
 ```bash
 git clone <URL_DEL_REPOSITORIO>
+cd Reto_Practicante
 ```
 
-Abrir el proyecto y ejecutar un servidor local (por ejemplo, Live Server en Visual Studio Code).
+Abrir el proyecto y ejecutar un servidor local (por ejemplo, Live Server en Visual Studio Code) — es necesario un servidor local (no abrir `index.html` con doble clic) para que la carga de módulos funcione correctamente.
+
+Para que el Asistente Inteligente use IA real (y no solo las plantillas locales), copiar `js/assistant/assistant-config.example.js` como `js/assistant/assistant-config.js` y poner ahí tu propia API key de Gemini. Sin ese paso, la aplicación funciona igual, pero el asistente responde con las plantillas locales en vez de generar con IA.
 
 ---
 
@@ -262,7 +267,6 @@ Abrir el proyecto y ejecutar un servidor local (por ejemplo, Live Server en Visu
 # 🔮 Posibles mejoras
 
 * Pronósticos utilizando modelos de Machine Learning.
-* Comparación automática entre sucursales.
 * Notificaciones por correo.
 * Integración completa con Odoo mediante API.
 * Historial de decisiones y auditoría.
